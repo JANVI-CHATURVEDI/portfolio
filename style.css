@@ -170,7 +170,7 @@ section {
 #home img {
     width: 18vw;
     border-radius: 50%;
-    margin-top: 2.5em;
+    margin-top: 1em;
 }
 
 .info-box {
@@ -232,33 +232,55 @@ section {
     background: linear-gradient(to bottom, #6cff52, #3ec5ff);
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 1390px) {
+    #home img {
+        width: 20vw;
+        margin-top: 1.5em;
+    }
+
+}
+
+@media (max-width: 1290px) {
+    #home img {
+        width: 18vw;
+        margin-top: 2.5em;
+    }
+
+}
+
+@media (max-width: 990px) {
     #home img {
         width: 24vw;
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #home img {
+        width: 27vw;
         border-radius: 50%;
-        margin-top: 5em;
+        margin-top: 1em;
     }
 
-    .info-box h1 {
-        font-size: 3em;
-    }
-
-
+ 
 }
 
 @media (max-width: 668px) {
     #home img {
         width: 30vw;
         
-        margin-top: 10em;
+       
     }
 
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     #home img {
-        width: 32vw;
+        width: 45vw;
+        margin-top: 3em;
         
     }
 
@@ -322,6 +344,12 @@ section {
         padding: 90px;
     }
 
+    #about img {
+    width: 40vw;
+    
+}
+
+
 }
 
 
@@ -332,6 +360,17 @@ section {
         flex-direction: column;
         padding: 10%;
     }
+
+}
+
+@media (max-width: 499px) {
+
+     #about img {
+        width: 60vw;
+        margin-bottom: 30px;
+    
+}
+
 
 }
 
@@ -428,6 +467,13 @@ section {
 
 /* Responsive Tweaks */
 @media (max-width: 768px) {
+
+    #skills {
+        padding: 12% 10%;
+ 
+}
+
+
     .section-title {
         font-size: 2.2rem;
     }
@@ -454,6 +500,14 @@ section {
         font-size: 1.9rem;
     }
 
+    .section-title span {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 600;
+   
+
+}
+
     .skills-box {
         padding: 20px;
     }
@@ -468,6 +522,18 @@ section {
         max-width: 100px;
     }
 }
+
+@media (max-width: 360px) {
+.section-title span {
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 600;
+
+}
+
+}
+
+
 
 /* projects */
 
@@ -662,6 +728,19 @@ section {
 
 .contact form button:hover {
     background-color: #2f5de0;
+}
+
+
+
+@media only screen and (max-width: 355px) {
+
+       .get-in-touch {
+        width: 50vw;
+        min-width: 340px;
+        margin: 15px;
+
+    } 
+
 }
 
 
