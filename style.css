@@ -140,6 +140,11 @@ span {
         display: none;
     }
 
+    nav {
+    
+    padding: 1em 9%;
+    
+}
 
 }
 
@@ -163,7 +168,7 @@ section {
 }
 
 #home img {
-    width: 14vw;
+    width: 18vw;
     border-radius: 50%;
     margin-top: 2.5em;
 }
@@ -229,13 +234,32 @@ section {
 
 @media (max-width: 768px) {
     #home img {
-        width: 20vw;
+        width: 24vw;
         border-radius: 50%;
-        margin-top: 7em;
+        margin-top: 5em;
     }
 
     .info-box h1 {
         font-size: 3em;
+    }
+
+
+}
+
+@media (max-width: 668px) {
+    #home img {
+        width: 30vw;
+        
+        margin-top: 10em;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+    #home img {
+        width: 32vw;
+        
     }
 
 
