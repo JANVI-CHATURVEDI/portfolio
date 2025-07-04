@@ -298,9 +298,10 @@ section {
 }
 
 @media (max-width: 450px) {
+
     #home img {
-        width: 45vw;
-        margin-top: 3em;
+        width: 53vw;
+        margin-top: 0;
 
     }
 
