@@ -460,7 +460,7 @@ section {
 
 /* Box Style */
 .skills-box {
-    background-color: rgba(225, 148, 255, 0.2);
+    background-color: rgba(216, 77, 244, 0.2);
     padding: 25px;
     border-radius: 15px;
     margin-bottom: 20px;
@@ -636,7 +636,7 @@ section {
 
 .project-card {
     position: relative;
-    background: rgba(114, 56, 122, 0.4);
+     background-color: rgba(216, 77, 244, 0.2);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 280px;
@@ -751,7 +751,7 @@ section {
     width: 45vw;
     min-width: 280px;
     padding: 30px;
-    background-color: #0c0010;
+    background-color: #0c0111;
 }
 
 .get-in-touch h2 {
