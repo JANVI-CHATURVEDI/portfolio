@@ -52,3 +52,47 @@ cross.addEventListener("click", function () {
       }
     }
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*";
+
+function jumbleTextEffect(element, duration = 10) {
+  const originalText = element.dataset.original || element.textContent;
+  element.dataset.original = originalText;
+
+  let iterations = 0;
+  const interval = setInterval(() => {
+    element.textContent = originalText
+      .split("")
+      .map((char, i) => {
+        if (i < iterations) return originalText[i];
+        return chars[Math.floor(Math.random() * chars.length)];
+      })
+      .join("");
+
+    if (iterations >= originalText.length) {
+      clearInterval(interval);
+    }
+
+    iterations += 1 / 2; // adjust speed
+  }, 30);
+}
+
+// Run the effect for all .jumble elements on page load
+window.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".jumble").forEach((el) => {
+    jumbleTextEffect(el);
+  });
+});

@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,36 +10,47 @@
     box-sizing: border-box;
     list-style: none;
     scroll-behavior: smooth;
-    font-family: 'poppins';
+    font-family: 'Dancing Script', cursive;
+
 }
 
 :root {
-    --background: rgb(24, 24, 24);
-    --second-background: rgb(20, 20, 20);
+    --background: rgb(0, 0, 0);
+    --second-background: rgb(0, 0, 0);
 
 }
 
 body {
     min-height: 100vh;
     background-color: var(--background);
+    /* background-color: #260a01;  */
 }
+
+
+
+
 
 /* nav */
 
 nav {
     position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 2em 12%;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 1.1em 3em 1.1em 3em;
+    /* just equal padding all around */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(6, 6, 6);
+    background-color: rgba(121, 102, 147, 0.2);
     backdrop-filter: blur(10px);
     z-index: 1000;
+    border-radius: 32px;
+    /* optional rounded feel */
 }
 
-ul {
+nav ul {
     display: flex;
     align-items: center;
     gap: 3em;
@@ -113,7 +129,7 @@ nav ul a:hover {
 }
 
 span {
-    background: linear-gradient(to right, #6cff52, #3ec5ff);
+    background: linear-gradient(to right, #9d3ec9, #3ec5ff);
     background-clip: text;
     color: transparent;
 }
@@ -121,7 +137,7 @@ span {
 #menu {
     display: none;
     color: white;
-    font-size: 3em;
+    
 
 }
 
@@ -133,6 +149,7 @@ span {
 
     #menu {
         display: block;
+        font-size: 2em;
 
     }
 
@@ -141,10 +158,10 @@ span {
     }
 
     nav {
-    
-    padding: 1em 9%;
-    
-}
+
+        padding: 0.5em 1.3em 0.5em 1.3em;
+
+    }
 
 }
 
@@ -181,6 +198,7 @@ section {
     max-width: 600px;
 }
 
+
 .info-box h1 {
     font-size: 3em;
     font-weight: 500;
@@ -190,10 +208,12 @@ section {
 .info-box h3 {
     font-size: 2em;
     font-weight: 400;
+
 }
 
 .info-box p {
     opacity: 0.7;
+    font-size: 19px;
 }
 
 .btn-box {
@@ -229,7 +249,7 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #6cff52, #3ec5ff);
+     background: linear-gradient(to bottom, #9d3ec9, #3ec5ff);
 }
 
 
@@ -264,14 +284,14 @@ section {
         margin-top: 1em;
     }
 
- 
+
 }
 
 @media (max-width: 668px) {
     #home img {
         width: 30vw;
-        
-       
+
+
     }
 
 
@@ -281,8 +301,9 @@ section {
     #home img {
         width: 45vw;
         margin-top: 3em;
-        
+
     }
+
 
 
 }
@@ -317,7 +338,39 @@ section {
 .about-info p {
     color: white;
     opacity: 0.8;
-    font-size: 20px;
+    font-size: 25px;
+
+
+
+}
+
+.personal-details {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.personal-details ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.personal {
+    color: #9e3eff;
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.personal-details a {
+    color: #7dd3fc;
+    text-decoration: none;
+}
+
+.personal-details a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 1108px) {
@@ -330,7 +383,7 @@ section {
     .about-info p {
         color: white;
         opacity: 0.8;
-        font-size: 17px;
+        font-size: 21px;
         padding-bottom: 10px;
     }
 
@@ -345,9 +398,9 @@ section {
     }
 
     #about img {
-    width: 40vw;
-    
-}
+        width: 40vw;
+
+    }
 
 
 }
@@ -365,11 +418,11 @@ section {
 
 @media (max-width: 499px) {
 
-     #about img {
+    #about img {
         width: 60vw;
         margin-bottom: 30px;
-    
-}
+
+    }
 
 
 }
@@ -406,18 +459,18 @@ section {
 
 /* Box Style */
 .skills-box {
-    background-color: #000000;
+    background-color: rgba(225, 148, 255, 0.2);
     padding: 25px;
     border-radius: 15px;
     margin-bottom: 20px;
-    box-shadow: 0 0 20px rgba(127, 90, 240, 0.15);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     width: 90vw;
 }
 
 .skills-box h3 {
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: grey;
+    color: rgb(254, 253, 253);
     text-align: center;
 }
 
@@ -427,11 +480,12 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 20px;
     justify-items: center;
+
 }
 
 /* Skill Card */
 .skill-card {
-    background-color: #fff;
+    background-color: #d5cedc;
     color: #111;
     padding: 15px 10px;
     width: 100%;
@@ -440,16 +494,22 @@ section {
     border-radius: 10px;
     font-weight: 600;
     font-size: 1rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
 }
 
 .skill-card:hover {
-    transform: scale(1.05);
-    background: linear-gradient(to right, #6cff52, #3ec5ff);
-    max-width: 170px;
-    padding: 16px 11px;
+
+    background: linear-gradient(to right, #9d3ec9, #3ec5ff);
+    color: #fff;
+    box-shadow: 0 10px 25px rgba(157, 62, 201, 0.4);
+    z-index: 10;
+
+
 }
+
 
 /* Coming Soon */
 .coming-soon h3 span {
@@ -470,8 +530,8 @@ section {
 
     #skills {
         padding: 12% 10%;
- 
-}
+
+    }
 
 
     .section-title {
@@ -501,12 +561,12 @@ section {
     }
 
     .section-title span {
-    font-size: 1.5em;
-    text-align: center;
-    font-weight: 600;
-   
+        font-size: 1.5em;
+        text-align: center;
+        font-weight: 600;
 
-}
+
+    }
 
     .skills-box {
         padding: 20px;
@@ -524,12 +584,12 @@ section {
 }
 
 @media (max-width: 360px) {
-.section-title span {
-    font-size: 1.3em;
-    text-align: center;
-    font-weight: 600;
+    .section-title span {
+        font-size: 1.3em;
+        text-align: center;
+        font-weight: 600;
 
-}
+    }
 
 }
 
@@ -538,7 +598,7 @@ section {
 /* projects */
 
 .projects-section {
-    padding: 95px 0;
+    
     background-color: var(--second-background);
     text-align: center;
     color: #f8f3f5;
@@ -560,7 +620,7 @@ section {
 }
 
 .projects-container {
-    margin-top: 80px;
+    margin-top: 70px;
     width: 100%;
     max-width: 1200px;
     margin-left: auto;
@@ -575,7 +635,7 @@ section {
 
 .project-card {
     position: relative;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(114, 56, 122, 0.4);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 280px;
@@ -593,9 +653,11 @@ section {
 }
 
 .project-card:hover {
-  transform: scale(1.08); /* 🧡 this makes it stretch */
-  box-shadow: 0 3px 15px rgb(73, 71, 71);
-  z-index: 10; /* so it appears above nearby cards */
+    transform: scale(1.08);
+    /* 🧡 this makes it stretch */
+    box-shadow: 0 3px 15px rgb(73, 71, 71);
+    z-index: 10;
+    /* so it appears above nearby cards */
 }
 
 .project-card img {
@@ -604,6 +666,14 @@ section {
     right: 17px;
     width: 270px;
     height: 200px;
+}
+
+.project-card h3{
+    font-size: 22px;
+}
+
+.project-card p{
+    font-size: 18px;
 }
 
 .project-card h3,
@@ -622,6 +692,7 @@ section {
     color: white;
     text-decoration: none;
     font-weight: 5px;
+     border-bottom: 1px solid #edeeef;
 
 }
 
@@ -664,13 +735,14 @@ section {
 
 .text {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .img {
-    width: 20px;
+    width: 40px;
     vertical-align: middle;
     margin-right: 10px;
+    border-radius: 20px;
 }
 
 
@@ -678,17 +750,18 @@ section {
     width: 45vw;
     min-width: 280px;
     padding: 30px;
-    background-color: #090908;
+    background-color: #0c0010;
 }
 
 .get-in-touch h2 {
     margin-bottom: 10px;
-    font-size: 34px;
+    font-size: 38px;
 }
 
 .msg {
     margin-bottom: 4rem !important;
-    font-size: 20px;
+    font-size: 25px;
+    color: #f8f3f5;
 }
 
 .get-in-touch div {
@@ -699,7 +772,7 @@ section {
 .contact {
     width: 45vw;
     padding: 50px;
-    background-color: #090908;
+    background-color: #0c0010;
 }
 
 .contact form input,
@@ -709,7 +782,7 @@ section {
     margin-bottom: 1rem;
     border: none;
     border-radius: 5px;
-    background-color: #1e1e2f;
+    background-color: #392843;
     color: white;
     font-size: 1rem;
 }
@@ -717,7 +790,7 @@ section {
 .contact form button {
     width: 100%;
     padding: 12px;
-    background-color: #3f74f5;
+    background-color: #5c1a76;
     color: white;
     border: none;
     border-radius: 5px;
@@ -727,29 +800,34 @@ section {
 }
 
 .contact form button:hover {
-    background-color: #2f5de0;
+    background-color: #a52fe0;
 }
 
 
 
 @media only screen and (max-width: 355px) {
 
-       .get-in-touch {
+    .get-in-touch {
         width: 50vw;
         min-width: 340px;
         margin: 15px;
 
-    } 
+    }
 
 }
 
-
-@media only screen and (max-width: 405px) {
+@media only screen and (max-width: 500px) {
 
     .text {
-        font-size: 17px;
-        /* display: flex; */
+        font-size: 20px;
+    }
 
+}
+
+@media only screen and (max-width: 455px) {
+
+    .text {
+        font-size: 18px;
     }
 
     .msg {
@@ -770,6 +848,8 @@ section {
     }
 
 }
+
+
 
 @media only screen and (max-width: 838px) {
 
