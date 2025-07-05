@@ -407,7 +407,7 @@ section {
     #about {
         display: flex;
         flex-direction: column;
-        padding: 7% 10%;
+        padding: 2% 10%;
     }
 
 }
