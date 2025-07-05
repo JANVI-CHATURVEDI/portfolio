@@ -7,26 +7,6 @@ AOS.init({
 });
 
 
-const menu = document.querySelector(".bx-menu");
-const dropdown=document.querySelector(".drop-down")
-const cross = document.querySelector(".cross");
-
-menu.addEventListener("click", function () {
- 
-    dropdown.style.display = "block";
-    menu.style.display="none"
-  
-
-});
-
-
-cross.addEventListener("click", function () {
-  
-  dropdown.style.display = "none";
-    menu.style.display="block"
-
-});
-
 
  const form = document.getElementById('contact-form');
 

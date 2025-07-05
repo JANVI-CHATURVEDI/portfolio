@@ -66,36 +66,8 @@ nav ul a:hover {
     opacity: 1;
 }
 
-.links1 {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: 60%;
-    background-color: rgba(0, 0, 0, 0.8);
-    /* 50% transparent black */
-    position: fixed;
-    right: 0;
-    z-index: 100000;
-    padding: 90px;
-    gap: 40px;
-    text-align: center;
-
-}
-
-.drop-down {
+.links1{
     display: none;
-}
-
-.cross {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-}
-
-.links1 a {
-    color: white;
-    margin-bottom: 1px;
 }
 
 
@@ -134,24 +106,11 @@ span {
     color: transparent;
 }
 
-#menu {
-    display: none;
-    color: white;
-    
 
-}
 
 
 @media (max-width: 868px) {
-    .links a {
-        display: none;
-    }
 
-    #menu {
-        display: block;
-        font-size: 2em;
-
-    }
 
     .btn {
         display: none;
@@ -162,6 +121,35 @@ span {
         padding: 0.5em 1.3em 0.5em 1.3em;
 
     }
+
+}
+
+@media (max-width: 580px) {
+
+    nav {
+    position: fixed;
+    bottom: 50px;
+    top : 90%;
+    left: 50%;
+    padding: 1.1em 3em 1.1em 3em;
+    justify-content: center;
+    
+}
+
+.logo{
+    display: none;
+}
+
+.links{
+    display: none;
+}
+
+.links1{
+    display: block;
+   display: flex;
+}
+
+
 
 }
 
@@ -277,11 +265,11 @@ section {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 798px) {
     #home img {
-        width: 27vw;
+        width: 30vw;
         border-radius: 50%;
-        margin-top: 1em;
+        margin-top: 0;
     }
 
 
@@ -289,9 +277,14 @@ section {
 
 @media (max-width: 668px) {
     #home img {
-        width: 30vw;
+        width: 35vw;
 
 
+    }
+
+    section {
+        min-height: 100vh;
+        padding: 10% 5%;
     }
 
 
@@ -698,7 +691,16 @@ section {
 }
 
 
+@media (max-width: 950px) {
 
+
+ section {
+        min-height: 100vh;
+        padding: 10% 5%;
+    }
+
+
+}
 
 @media (max-width: 768px) {
 
@@ -711,6 +713,8 @@ section {
 
 
 }
+
+
 
 
 @media (max-width: 450px) {
@@ -872,10 +876,7 @@ section {
 
 @media only screen and (max-width: 985px) {
 
-    section {
-        min-height: 100vh;
-        padding: 15% 3%;
-    }
+  
 
     #contact {
         margin-top: 30px;
