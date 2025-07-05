@@ -298,6 +298,8 @@ section {
 
     }
 
+   
+
 
 
 }
@@ -405,7 +407,7 @@ section {
     #about {
         display: flex;
         flex-direction: column;
-        padding: 10%;
+        padding: 7% 10%;
     }
 
 }
@@ -694,7 +696,7 @@ section {
 @media (max-width: 950px) {
 
 
- section {
+ section{
         min-height: 100vh;
         padding: 10% 5%;
     }
